@@ -1,0 +1,68 @@
+local baseId = 1495000
+
+ITEM_MAPPING = {
+	-- Upgrades
+	[baseId + 0] = { "gumpower" },
+	[baseId + 1] = { "soappower" },
+	[baseId + 2] = { "bootspower" },
+	[baseId + 3] = { "plungerpower" },
+	[baseId + 4] = { "slipperpower" },
+	[baseId + 5] = { "lampshadepower" },
+	[baseId + 6] = { "blackknightpower" },
+	[baseId + 7] = { "springpower" },
+	[baseId + 8] = { "poundpower" },
+	[baseId + 9] = { "helmetpower" },
+	[baseId + 10] = { "umbrellapower" },
+	[baseId + 11] = { "shovelpower" },
+	[baseId + 12] = { "shockwavepower" },
+
+	-- Ammo Upgrades
+	[baseId + 13] = { "gumammoupgrade" },
+	[baseId + 14] = { "soapammoupgrade" },
+
+	-- Monster Tokens
+	[baseId + 15] = { "mtblackknight" },
+	[baseId + 16] = { "mtmoody" },
+	[baseId + 17] = { "mtcaveman" },
+	[baseId + 18] = { "mtcreeper" },
+	[baseId + 19] = { "mtgargoyle" },
+	[baseId + 20] = { "mtgeronimo" },
+	[baseId + 21] = { "mtghost" },
+	[baseId + 22] = { "mtghostdiver" },
+	[baseId + 23] = { "mtgreenghost" },
+	[baseId + 24] = { "mtheadless" },
+	[baseId + 25] = { "mtmastermind" },
+	[baseId + 26] = { "mtrobot" },
+	[baseId + 27] = { "mtredbeard" },
+	[baseId + 28] = { "mtscarecrow" },
+	[baseId + 29] = { "mtseacreature" },
+	[baseId + 30] = { "mtspacekook" },
+	[baseId + 31] = { "mttarmonster" },
+	[baseId + 32] = { "mtwitch" },
+	[baseId + 33] = { "mtwitchdoc" },
+	[baseId + 34] = { "mtwolfman" },
+	[baseId + 35] = { "mtzombie" },
+
+	-- Keys
+	[baseId + 36] = { "clamor1key" },
+	[baseId + 37] = { "hedgekey" },
+	[baseId + 38] = { "fishingkey" },
+	[baseId + 39] = { "cellar2key" },
+	[baseId + 40] = { "cellar3key" },
+	[baseId + 41] = { "cavinkey" },
+	[baseId + 42] = { "fishyclueskey" },
+	[baseId + 43] = { "graveplotkey" },
+	[baseId + 44] = { "tomb1key" },
+	[baseId + 45] = { "tomb3key" },
+	[baseId + 46] = { "clamor4key" },
+	[baseId + 47] = { "mymkey" },
+	[baseId + 48] = { "coastkey" },
+	[baseId + 49] = { "attickey" },
+	[baseId + 50] = { "knightkey" },
+	[baseId + 51] = { "creepy2key" },
+	[baseId + 52] = { "creepy3key" },
+	[baseId + 53] = { "gusts1key" },
+	[baseId + 54] = { "gusts2key" },
+	[baseId + 55] = { "dldkey" },
+	[baseId + 56] = { "shiverkey" }
+}

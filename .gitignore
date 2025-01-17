@@ -1,0 +1,6 @@
+*.DS_Store
+*.pdn
+*Thumbs.db
+versions.json
+.vscode*
+images/tradebak

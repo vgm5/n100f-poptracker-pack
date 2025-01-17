@@ -1,0 +1,748 @@
+[
+	{
+		"name": "Hub",
+		"chest_unopened_img": "/images/chest/flower_closed.png",
+		"chest_opened_img": "/images/chest/flower_open.png",
+		"children": [
+			{
+				"name": "Mystery Machine",
+				// Location id used by the randomizer, does nothing in poptracker.
+				"location_id": "hub1",
+				"access_rules": [],
+				"sections": [
+					{
+						"name": "Fishing Key Pickup",
+						"access_rules": [
+							"spring"
+						],
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Hedge Key Pickup",
+						"access_rules": [
+							"shovel"
+						],
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Shovel Pickup"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "hub",
+						"x": 600,
+						"y": 475
+					}
+				]
+			},
+			{
+				"name": "Mystic Playground",
+				"location_id": "hub2",
+				"access_rules": [
+					"@Hub/Mystery Machine"
+				],
+				"sections": [
+					{
+						"name": "Gargoyle Token",
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "hub",
+						"x": 605,
+						"y": 715
+					}
+				]
+			},
+			{
+				"name": "Monster Gallery",
+				"location_id": "hub3",
+				"access_rules": [
+					"@Hub/Mystery Machine"
+				],
+				"sections": [],
+				"map_locations": []
+			}
+		]
+	},
+	{
+		"name": "Mystic Manor",
+		"chest_unopened_img": "/images/chest/flower_closed.png",
+		"chest_opened_img": "/images/chest/flower_open.png",
+		"children": [
+			{
+				"name": "Clamor in the Manor! 1",
+				"access_rules": [],
+				"sections": [
+					{
+						"name": "Headless Specter Token",
+						"access_rules": "spring"
+					},
+					{
+						"name": "Key Pickup",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 675,
+						"y": 695
+					}
+				]
+			},
+			{
+				"name": "Clamor in the Manor! 2",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Clamor in the Manor! 1,$has|clamor1key|1",
+					"op_keysanity_off,@Mystic Manor/Clamor in the Manor! 1"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Clamor in the Manor! 3",
+				"access_rules": [
+					"@Mystic Manor/Clamor in the Manor! 2,helmet"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Clamor in the Manor! 4",
+				"access_rules": [
+					"@Mystic Manor/Clamor in the Manor! 3"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 770,
+						"y": 480
+					}
+				]
+			},
+			{
+				"name": "Mind Your Manors! 1",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Clamor in the Manor! 4,$has|clamor4key|1,helmet",
+					"op_keysanity_off,@Mystic Manor/Clamor in the Manor! 4,helmet"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Mind Your Manors! 2",
+				"access_rules": [
+					"@Mystic Manor/Mind Your Manors! 1"
+				],
+				"sections": [
+					{
+						"name": "Geronimo Token",
+						"access_rules": [
+							"$has|mym2key|4",
+							"umbrella,spring"
+						],
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 4",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 965,
+						"y": 500
+					}
+				]
+			},
+			{
+				"name": "Mind Your Manors! 3",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Mind Your Manors! 2,$has|mym2key|4",
+					"op_keysanity_off,@Mystic Manor/Mind Your Manors! 2"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "All Scares Upstairs! 1",
+				"access_rules": [
+					"@Mystic Manor/Mind Your Manors! 3,spring"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "All Scares Upstairs! 2",
+				"access_rules": [
+					"@Mystic Manor/All Scares Upstairs! 1"
+				],
+				"sections": [
+					{
+						"name": "Max Gum Ammo"
+					},
+					{
+						"name": "Witch Doctor Token",
+						"access_rules": [
+							"plunger,spring"
+						],
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 1060,
+						"y": 610
+					}
+				]
+			},
+			{
+				"name": "All Scares Upstairs! 3",
+				"access_rules": [
+					"@Mystic Manor/All Scares Upstairs! 2"
+				],
+				"sections": [
+					{
+						"name": "Max Soap Ammo"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 1080,
+						"y": 502
+					}
+				]
+			},
+			{
+				"name": "All Scares Upstairs! 4",
+				"access_rules": [
+					"@Mystic Manor/All Scares Upstairs! 3"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Don't Look Down, Scooby-Doo! 1",
+				"access_rules": [
+					"@Mystic Manor/All Scares Upstairs! 4"
+				],
+				"sections": [
+					{
+						"name": "Black Knight Armor Pickup"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 1060,
+						"y": 290
+					}
+				]
+			},
+			{
+				"name": "Don't Look Down, Scooby-Doo! 2",
+				"access_rules": [
+					"@Mystic Manor/Don't Look Down, Scooby-Doo! 1"
+				],
+				"sections": [
+					{
+						"name": "Max Soap Ammo"
+					},
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 965,
+						"y": 270
+					}
+				]
+			},
+			{
+				"name": "Cower in the Tower! 1",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Don't Look Down, Scooby-Doo! 2,$has|dld2key|3",
+					"op_keysanity_off,@Mystic Manor/Don't Look Down, Scooby-Doo! 2",
+					"@Mystic Manor/Mind Your Manors! 1,umbrella,spring"
+				],
+				"sections": [
+					{
+						"name": "Black Knight Token",
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					},
+					{
+						"name": "Max Gum Ammo",
+						"access_rules": [
+							"$has|attic2key|3,$has|knight2key|4",
+							"boots"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 865,
+						"y": 290
+					}
+				]
+			},
+			{
+				"name": "Panic in the Attic! 2",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Don't Look Down, Scooby-Doo! 2,$has|dld2key",
+					"op_keysanity_off,@Mystic Manor/Don't Look Down, Scooby-Doo! 2",
+					"@Mystic Manor/Mind Your Manors! 1,umbrella,spring"
+				],
+				"sections": [
+					{
+						"name": "Max Soap Ammo"
+					},
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 865,
+						"y": 290
+					}
+				]
+			},
+			{
+				"name": "Little Lab of Horrors 1",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Creepy Crawlies in the Hallways 2,$has|creepy2key|5,soap,spring,helmet,pound",
+					"op_keysanity_off,@Mystic Manor/Creepy Crawlies in the Hallways 2,soap,spring,helmet,pound"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Little Lab of Horrors 2",
+				"access_rules": [
+					"@Mystic Manor/Little Lab of Horrors 1,umbrella,pound,helmet,spring"
+				],
+				"sections": [
+					{
+						"name": "Robot Token",
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 190,
+						"y": 190
+					}
+				]
+			},
+			{
+				"name": "Little Lab of Horrors 3",
+				"access_rules": [
+					"@Mystic Manor/Little Lab of Horrors 2"
+				],
+				"sections": [
+					{
+						"name": "Mastermind Token",
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 90,
+						"y": 205
+					}
+				]
+			},
+			{
+				"name": "Mastermind Unmasked! 1",
+				"access_rules": [
+					"@Mystic Manor/Little Lab of Horrors 2"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Mastermind Unmasked! 2",
+				"access_rules": [
+					"@Mystic Manor/Mastermind Unmasked! 1"
+				],
+				"sections": [
+					{
+						"name": "Max Gum Ammo"
+					},
+					{
+						"name": "Max Soap Ammo"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 210,
+						"y": 400
+					}
+				]
+			},
+			{
+				"name": "Creepy Crawlies in the Hallways 1",
+				"access_rules": [
+					"@Fishing Village/Shock on the Dock 2,pound"
+				],
+				"sections": [],
+				"map_locations": []
+			},
+			{
+				"name": "Creepy Crawlies in the Hallways 2",
+				"access_rules": [
+					"@Mystic Manor/Creepy Crawlies in the Hallways 1,pound"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 4",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 5",
+						"access_rules": [
+							"$has|creepy2key|4,helmet"
+						],
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 385,
+						"y": 185
+					}
+				]
+			},
+			{
+				"name": "Creepy Crawlies in the Hallways 3",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Creepy Crawlies in the Hallways 2,$has|creepy2key|5,helmet,pound",
+					"op_keysanity_off,@Mystic Manor/Creepy Crawlies in the Hallways 2,helmet,pound"
+				],
+				"sections": [
+					{
+						"name": "Plunger Pickup"
+					},
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 380,
+						"y": 290
+					}
+				]
+			},
+			{
+				"name": "Gusts Abound Underground 1",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Creepy Crawlies in the Hallways 3,$has|creepy3key|3,gum,spring",
+					"op_keysanity_off,@Mystic Manor/Creepy Crawlies in the Hallways 3,gum,spring"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 380,
+						"y": 395
+					}
+				]
+			},
+			{
+				"name": "Gusts Abound Underground 2",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Gusts Abound Underground 1,$has|gusts1key|1,helmet,plunger",
+					"op_keysanity_off,@Mystic Manor/Gusts Abound Underground 1,helmet,plunger"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 4",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 480,
+						"y": 375
+					}
+				]
+			},
+			{
+				"name": "Who's Yella' in the Cellar? 1",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Gusts Abound Underground 2,$has|gusts2key|4,umbrella,spring",
+					"op_keysanity_off,@Mystic Manor/Gusts Abound Underground 2,umbrella,spring"
+				],
+				"sections": [
+					{
+						"name": "Space Kook Token",
+						"access_rules": [
+							"op_keysanity_on,$has|cellar2key|3,soap,helmet"
+						],
+						"visibility_rules": [
+							"op_tokensanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 460,
+						"y": 500
+					}
+				]
+			},
+			{
+				"name": "Who's Yella' in the Cellar? 2",
+				"access_rules": [
+					"@Mystic Manor/Who's Yella' in the Cellar? 1,gum",
+					"@Mystic Manor/Who's Yella' in the Cellar? 1,soap"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 440,
+						"y": 608
+					}
+				]
+			},
+			{
+				"name": "Who's Yella' in the Cellar? 3",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Who's Yella' in the Cellar? 2,$has|cellar2key|3",
+					"op_keysanity_off,@Mystic Manor/Who's Yella' in the Cellar? 2"
+				],
+				"sections": [
+					{
+						"name": "Key Pickup 1",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 2",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 3",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					},
+					{
+						"name": "Key Pickup 4",
+						"visibility_rules": [
+							"op_keysanity_on"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 575,
+						"y": 608
+					}
+				]
+			},
+			{
+				"name": "Who's Yella' in the Cellar? 4",
+				"access_rules": [
+					"op_keysanity_on,@Mystic Manor/Who's Yella' in the Cellar? 3,$has|cellar3key|4",
+					"op_keysanity_off,@Mystic Manor/Who's Yella' in the Cellar? 3",
+					"@Mystic Manor/Clamor in the Manor! 4,soap"
+				],
+				"sections": [
+					{
+						"name": "Soap Bubble Pickup"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "manor",
+						"x": 575,
+						"y": 480
+					}
+				]
+			}
+		]
+	}
+]

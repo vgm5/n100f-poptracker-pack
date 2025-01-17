@@ -1,0 +1,72 @@
+ITEM_NAMES = {
+    -- Upgrades
+    GumPower         = "Bubble Gum Power",
+    SoapPower        = "Soap Bubble Power",
+    SpringPower      = "Spring Power",
+    PoundPower       = "Ground Pound Power",
+    HelmetPower      = "Helmet Power",
+    UmbrellaPower    = "Umbrella Power",
+    ShockwavePower   = "Shockwave Power",
+    BootsPower       = "Boots Powerup",
+    PlungerPower     = "Plungers Power",
+    SlipperPower     = "Slippers Power",
+    LampshadePower   = "Lampshade Power",
+    BlackknightPower = "Black Knight Power",
+    ShovelPower      = "Shovel Power",
+
+    Upgrades         = "Upgrades",
+
+    -- Ammo Upgrades
+    GumAmmoUpgrade   = "Max Gum Ammo",
+    SoapAmmoUpgrade  = "Max Soap Ammo",
+
+    -- Monster Tokens
+    MT_BLACKKNIGHT   = "Monster Token: Black Knight",
+    MT_MOODY         = "Monster Token: Capt. Moody",
+    MT_CAVEMAN       = "Monster Token: Caveman",
+    MT_CREEPER       = "Monster Token: Creeper",
+    MT_GARGOYLE      = "Monster Token: Gargoyle",
+    MT_GERONIMO      = "Monster Token: Geronimo",
+    MT_GHOST         = "Monster Token: Ghost",
+    MT_GHOSTDIVER    = "Monster Token: Ghost Diver",
+    MT_GREENGHOST    = "Monster Token: Green Ghost",
+    MT_HEADLESS      = "Monster Token: Headless Spectre",
+    MT_MASTERMIND    = "Monster Token: Mastermind",
+    MT_ROBOT         = "Monster Token: Robot",
+    MT_REDBEARD      = "Monster Token: Redbeard",
+    MT_SCARECROW     = "Monster Token: Scarecrow",
+    MT_SEACREATURE   = "Monster Token: Sea Creature",
+    MT_SPACEKOOK     = "Monster Token: Space Kook",
+    MT_TARMONSTER    = "Monster Token: Tar Monster",
+    MT_WITCH         = "Monster Token: Witch",
+    MT_WITCHDOC      = "Monster Token: Witchdoctor",
+    MT_WOLFMAN       = "Monster Token: Wolfman",
+    MT_ZOMBIE        = "Monster Token: Zombie",
+
+    MonsterTokens    = "Monster Tokens",
+
+    -- Keys
+    Clamor1_Key      = "Clamor 1 Key",
+    Hedge_Key        = "Hedge Maze Key",
+    Fishing_Key      = "Fishing Village Key",
+    Cellar2_Key      = "Cellar 2 Key",
+    Cellar3_Key      = "Cellar 3 Key",
+    Cavein_Key       = "Cave-in Key",
+    FishyClues_Key   = "Fishy Clues Key",
+    Graveplot_Key    = "Graveplot Key",
+    Tomb1_Key        = "Tomb 1 Key",
+    Tomb3_Key        = "Tomb 3 Key",
+    Clamor4_Key      = "Clamor 4 Key",
+    MYM_Key          = "Mind Your Manors Key",
+    Coast_Key        = "Coast Key",
+    Attic_Key        = "Attic Key",
+    Knight_Key       = "Knight Key",
+    Creepy2_Key      = "Creepy 2 Key",
+    Creepy3_Key      = "Creepy 3 Key",
+    Gusts1_Key       = "Gusts 1 Key",
+    Gusts2_Key       = "Gusts 2 Key",
+    DLD_Key          = "Don't Look Down Key",
+    Shiver_Key       = "Shiver Key",
+
+    Keys             = "Keys"
+}
