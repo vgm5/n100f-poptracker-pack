@@ -18,7 +18,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"knight2key"
+									"knightkey"
 								]
 							]
 						}
@@ -31,7 +31,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"graveplot1key"
+									"graveplotkey"
 								]
 							]
 						}
@@ -44,7 +44,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"coast1key"
+									"coastkey"
 								]
 							]
 						}
@@ -57,7 +57,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"dld2key"
+									"don'tlookdownkey"
 								]
 							]
 						}
@@ -70,7 +70,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"fishy2key"
+									"fishyclueskey"
 								]
 							]
 						}
@@ -177,7 +177,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"mym2key"
+									"mindyourmanorskey"
 								]
 							]
 						}
@@ -190,7 +190,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"cavein1key"
+									"cave-inkey"
 								]
 							]
 						}
@@ -203,7 +203,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"attic2key"
+									"attickey"
 								]
 							]
 						}
@@ -216,7 +216,7 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"shiver1key"
+									"shiverkey"
 								]
 							]
 						}
@@ -229,10 +229,10 @@
 							"item_size": "32",
 							"rows": [
 								[
-									"fishingkey"
+									"fishingvillagekey"
 								],
 								[
-									"hedgekey"
+									"hedgemazekey"
 								]
 							]
 						}

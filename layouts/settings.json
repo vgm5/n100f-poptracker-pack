@@ -17,8 +17,10 @@
 						"item_size": "64",
 						"rows": [
 							[
-								"op_keysanity_on",
-								"tokensanity"
+								"keysanity",
+								"tokensanity",
+								"warprando",
+								"snacksanity"
 							]
 						]
 					}

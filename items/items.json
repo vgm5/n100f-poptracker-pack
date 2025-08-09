@@ -4,95 +4,125 @@
 		"name": "Bubble Gum Power",
 		"type": "toggle",
 		"img": "/images/items/gum.png",
-		"codes": "gum"
+		"codes": "bubblegumpower"
 	},
 	{
 		"name": "Soap Bubble Power",
 		"type": "toggle",
 		"img": "/images/items/soap.png",
-		"codes": "soap"
-	},
-	{
-		"name": "Spring Power",
-		"type": "toggle",
-		"img": "/images/items/spring.png",
-		"codes": "spring"
+		"codes": "soapbubblepower"
 	},
 	{
 		"name": "Ground Pound Power",
 		"type": "toggle",
 		"img": "/images/items/pound.png",
-		"codes": "pound"
+		"codes": "groundpoundpower"
 	},
 	{
 		"name": "Helmet Power",
 		"type": "toggle",
 		"img": "/images/items/helmet.png",
-		"codes": "helmet"
-	},
-	{
-		"name": "Umbrella Power",
-		"type": "toggle",
-		"img": "/images/items/umbrella.png",
-		"codes": "umbrella"
+		"codes": "helmetpower"
 	},
 	{
 		"name": "Shockwave Power",
 		"type": "toggle",
 		"img": "/images/items/shockwave.png",
-		"codes": "shockwave"
+		"codes": "shockwavepower"
 	},
 	{
 		"name": "Boots Powerup",
 		"type": "toggle",
 		"img": "/images/items/boots.png",
-		"codes": "boots"
+		"codes": "bootspowerup"
 	},
 	{
 		"name": "Plungers Power",
 		"type": "toggle",
 		"img": "/images/items/plunger.png",
-		"codes": "plunger"
+		"codes": "plungerspower"
 	},
 	{
-		"name": "Slippers Power",
-		"type": "toggle",
-		"img": "/images/items/slippers.png",
-		"codes": "slippers"
+        "name": "Progressive Sneak Upgrade",
+        "type": "progressive_toggle",
+		"initial_stage_idx": 1,
+		"loop": false,
+		"stages": [
+			{
+				"img": "/images/items/slippers.png",
+				"img_mods": "@disabled",
+				"codes": "progressivesneakupgrade",
+				"inherit_codes": false,
+				"name": "No Sneak Upgrades"
+			},
+			{
+				"img": "/images/items/slippers.png",
+				"codes": "slippers",
+				"inherit_codes": true,
+				"name": "Slippers"
+			},
+			{
+				"img": "/images/items/lampshade.png",
+				"codes": "lampshade",
+				"inherit_codes": true,
+				"name": "Slippers + Lampshade"
+			},
+			{
+				"img": "/images/items/knight.png",
+				"codes": "knightarmor",
+				"inherit_codes": true,
+				"name": "Black Knight Armor"
+			}
+		]
 	},
 	{
-		"name": "Lampshade Power",
-		"type": "toggle",
-		"img": "/images/items/lampshade.png",
-		"codes": "lampshade"
-	},
-	{
-		"name": "Black Knight Power",
-		"type": "toggle",
-		"img": "/images/items/knight.png",
-		"codes": "knight"
+        "name": "Progressive Jump Upgrade",
+        "type": "progressive_toggle",
+		"initial_stage_idx": 1,
+		"loop": false,
+		"stages": [
+			{
+				"img": "/images/items/spring.png",
+				"img_mods": "@disabled",
+				"codes": "progressivejumpupgrade",
+				"inherit_codes": false,
+				"name": "No Jump Upgrades"
+			},
+			{
+				"img": "/images/items/spring.png",
+				"codes": "springs",
+				"inherit_codes": true,
+				"name": "Springs"
+			},
+			{
+				"img": "/images/items/umbrella.png",
+				"codes": "umbrella",
+				"inherit_codes": true,
+				"name": "Umbrella"
+			}
+		]
 	},
 	{
 		"name": "Shovel Power",
 		"type": "toggle",
 		"img": "/images/items/shovel.png",
-		"codes": "shovel"
+		"codes": "shovelpower"
 	},
 	{
 		"name": "Max Soap Ammo",
 		"type": "consumable",
 		"max_quantity": 8,
 		"initial_quantity": 0,
-		"img": "/images/items/shovel.png",
-		"codes": "maxsoap"
+		"img": "/images/items/bubble.png",
+		"codes": "maxsoapammo"
 	},
 	{
 		"name": "Max Gum Ammo",
 		"type": "consumable",
 		"max_quantity": 7,
 		"initial_quantity": 0,
-		"img": "/images/items/shovel.png",
-		"codes": "maxgum"
+		"img": "/images/items/gumwad.png",
+		"codes": "maxgumammo"
 	},
 	// Monster Tokens
 	{
@@ -221,41 +251,49 @@
 		"img": "/images/items/tokens/zombie.png",
 		"codes": "mt_zombie"
 	},
+	{
+		"name": "Progressive Monster Token",
+		"type": "consumable",
+		"max_quantity": 21,
+		"initial_quantity": 0,
+		"img": "/images/items/tokens/creature.png",
+		"codes": "progressivemonstertoken"
+	},
 	// Keys
 	{
-		"name": "A Dark and Stormy Knight! 2",
+		"name": "A Dark and Stormy Knight! 2 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "knight2key"
+		"codes": "knightkey"
 	},
 	{
-		"name": "A Tight Spot for a Grave Plot! 1",
+		"name": "A Tight Spot for a Grave Plot! 1 Key",
 		"type": "consumable",
 		"max_quantity": 3,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "graveplot1key"
+		"codes": "graveplotkey"
 	},
 	{
-		"name": "Mind Your Manors! 2",
+		"name": "Mind Your Manors! 2 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "mym2key"
+		"codes": "mindyourmanorskey"
 	},
 	{
-		"name": "Coast for some Ghosts! 1",
+		"name": "Coast for some Ghosts! 1 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "coast1key"
+		"codes": "coastkey"
 	},
 	{
-		"name": "Clamor in the Manor! 1",
+		"name": "Clamor in the Manor! 1 Key",
 		"type": "consumable",
 		"max_quantity": 1,
 		"initial_quantity": 0,
@@ -263,7 +301,7 @@
 		"codes": "clamor1key"
 	},
 	{
-		"name": "Clamor in the Manor! 4",
+		"name": "Clamor in the Manor! 4 Key",
 		"type": "consumable",
 		"max_quantity": 1,
 		"initial_quantity": 0,
@@ -271,7 +309,7 @@
 		"codes": "clamor4key"
 	},
 	{
-		"name": "Creepy Crawlies in the Hallways 2",
+		"name": "Creepy Crawlies in the Hallways 2 Key",
 		"type": "consumable",
 		"max_quantity": 5,
 		"initial_quantity": 0,
@@ -279,7 +317,7 @@
 		"codes": "creepy2key"
 	},
 	{
-		"name": "Creepy Crawlies in the Hallways 3",
+		"name": "Creepy Crawlies in the Hallways 3 Key",
 		"type": "consumable",
 		"max_quantity": 3,
 		"initial_quantity": 0,
@@ -287,23 +325,23 @@
 		"codes": "creepy3key"
 	},
 	{
-		"name": "Don't Look Down, Scooby-Doo! 2",
+		"name": "Don't Look Down, Scooby-Doo! 2 Key",
 		"type": "consumable",
 		"max_quantity": 3,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "dld2key"
+		"codes": "don'tlookdownkey"
 	},
 	{
-		"name": "Fishy Clues for Scooby-Doo? 2",
+		"name": "Fishy Clues for Scooby-Doo? 2 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "fishy2key"
+		"codes": "fishyclueskey"
 	},
 	{
-		"name": "Gloom & Doom Down in the Tomb! 1",
+		"name": "Gloom & Doom Down in the Tomb! 1 Key",
 		"type": "consumable",
 		"max_quantity": 1,
 		"initial_quantity": 0,
@@ -311,7 +349,7 @@
 		"codes": "tomb1key"
 	},
 	{
-		"name": "Gloom & Doom Down in the Tomb! 3",
+		"name": "Gloom & Doom Down in the Tomb! 3 Key",
 		"type": "consumable",
 		"max_quantity": 2,
 		"initial_quantity": 0,
@@ -319,7 +357,7 @@
 		"codes": "tomb3key"
 	},
 	{
-		"name": "Gusts Abound Underground 1",
+		"name": "Gusts Abound Underground 1 Key",
 		"type": "consumable",
 		"max_quantity": 1,
 		"initial_quantity": 0,
@@ -327,7 +365,7 @@
 		"codes": "gusts1key"
 	},
 	{
-		"name": "Gusts Abound Underground 2",
+		"name": "Gusts Abound Underground 2 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
@@ -335,23 +373,23 @@
 		"codes": "gusts2key"
 	},
 	{
-		"name": "Misbehavin'? Cause a Cave In 1",
+		"name": "Misbehavin'? Cause a Cave In 1 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "cavein1key"
+		"codes": "cave-inkey"
 	},
 	{
-		"name": "Shiver Your Timbers, Scooby! 1",
+		"name": "Shiver Your Timbers, Scooby! 1 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "shiver1key"
+		"codes": "shiverkey"
 	},
 	{
-		"name": "Who's Yella' in the Cellar? 2",
+		"name": "Who's Yella' in the Cellar? 2 Key",
 		"type": "consumable",
 		"max_quantity": 3,
 		"initial_quantity": 0,
@@ -359,7 +397,7 @@
 		"codes": "cellar2key"
 	},
 	{
-		"name": "Who's Yella' in the Cellar? 3",
+		"name": "Who's Yella' in the Cellar? 3 Key",
 		"type": "consumable",
 		"max_quantity": 4,
 		"initial_quantity": 0,
@@ -367,12 +405,12 @@
 		"codes": "cellar3key"
 	},
 	{
-		"name": "Panic in the Attic! 2",
+		"name": "Panic in the Attic! 2 Key",
 		"type": "consumable",
 		"max_quantity": 3,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "attic2key"
+		"codes": "attickey"
 	},
 	{
 		"name": "Fishing Village Key",
@@ -380,7 +418,7 @@
 		"max_quantity": 1,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "fishingkey"
+		"codes": "fishingvillagekey"
 	},
 	{
 		"name": "Hedge Maze Key",
@@ -388,13 +426,392 @@
 		"max_quantity": 1,
 		"initial_quantity": 0,
 		"img": "/images/items/key.png",
-		"codes": "hedgekey"
+		"codes": "hedgemazekey"
+	},
+	// Keyrings
+	{
+		"name": "A Dark and Stormy Knight! 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "knightkeyring"
+	},
+	{
+		"name": "A Tight Spot for a Grave Plot! 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "graveplotkeyring"
+	},
+	{
+		"name": "Mind Your Manors! 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "mindyourmanorskeyring"
+	},
+	{
+		"name": "Coast for some Ghosts! 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "coastkeyring"
+	},
+	{
+		"name": "Clamor in the Manor! 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "clamor1keyring"
+	},
+	{
+		"name": "Clamor in the Manor! 4 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "clamor4keyring"
+	},
+	{
+		"name": "Creepy Crawlies in the Hallways 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "creepy2keyring"
+	},
+	{
+		"name": "Creepy Crawlies in the Hallways 3 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "creepy3keyring"
+	},
+	{
+		"name": "Don't Look Down, Scooby-Doo! 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "don'tlookdownkeyring"
+	},
+	{
+		"name": "Fishy Clues for Scooby-Doo? 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "fishyclueskeyring"
+	},
+	{
+		"name": "Gloom & Doom Down in the Tomb! 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "tomb1keyring"
+	},
+	{
+		"name": "Gloom & Doom Down in the Tomb! 3 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "tomb3keyring"
+	},
+	{
+		"name": "Gusts Abound Underground 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "gusts1keyring"
+	},
+	{
+		"name": "Gusts Abound Underground 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "gusts2keyring"
+	},
+	{
+		"name": "Misbehavin'? Cause a Cave In 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "cave-inkeyring"
+	},
+	{
+		"name": "Shiver Your Timbers, Scooby! 1 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "shiverkeyring"
+	},
+	{
+		"name": "Who's Yella' in the Cellar? 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "cellar2keyring"
+	},
+	{
+		"name": "Who's Yella' in the Cellar? 3 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "cellar3keyring"
+	},
+	{
+		"name": "Panic in the Attic! 2 Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "attickeyring"
+	},
+	{
+		"name": "Fishing Village Keyring",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "fishingvillagekeyring"
+	},
+	{
+		"name": "Hedge Maze Key",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/keyring.png",
+		"codes": "hedgemazekeyring"
+	},
+    // Warpgates
+	{
+		"name": "Cellar Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "cellarwarp"
+	},
+	{
+		"name": "Cliff Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "cliffwarp"
+	},
+	{
+		"name": "Hedge Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "hedgewarp"
+	},
+	{
+		"name": "Greenhouse Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "greenhousewarp"
+	},
+	{
+		"name": "Hill Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "hillwarp"
+	},
+	{
+		"name": "Dock Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "dockwarp"
+	},
+	{
+		"name": "Fishy Clues Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "fishyclueswarp"
+	},
+	{
+		"name": "Cower Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "cowerwarp"
+	},
+	{
+		"name": "Crypt Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "cryptwarp"
+	},
+	{
+		"name": "Tomb Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "tombwarp"
+	},
+	{
+		"name": "Clamor Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "clamorwarp"
+	},
+	{
+		"name": "Mind Your Manors Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "mymwarp"
+	},
+	{
+		"name": "Coast Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "coastwarp"
+	},
+	{
+		"name": "Lighthouse Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "lighthousewarp"
+	},
+	{
+		"name": "Attic Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "atticwarp"
+	},
+	{
+		"name": "Knight Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "knightwarp"
+	},
+	{
+		"name": "Creepy Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "creepywarp"
+	},
+	{
+		"name": "Gusts Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "gustswarp"
+	},
+	{
+		"name": "Upstairs Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "upstairswarp"
+	},
+	{
+		"name": "Lab Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "labwarp"
+	},
+	{
+		"name": "Wreck Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "wreckwarp"
+	},
+	{
+		"name": "Aghast Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "aghastwarp"
+	},
+	{
+		"name": "Witch Way Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "witchwaywarp"
+	},
+	{
+		"name": "Graveplot Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "graveplotwarp"
+	},
+	{
+		"name": "Monster Gallery Warp",
+		"type": "consumable",
+		"max_quantity": 1,
+		"initial_quantity": 0,
+		"img": "/images/items/warpgate.png",
+		"codes": "monstergallerywarp"
+	},
+	// Snacksanity
+	{
+		"name": "Scooby Snack",
+		"type": "consumable",
+		"max_quantity": 5287,
+		"initial_quantity": 0,
+		"img": "/images/items/snack.png",
+		"codes": "scoobysnack"
 	},
 	// Settings
 	{
 		"name": "Enable Keysanity",
 		"type": "progressive",
-		"initial_stage_idx": 1,
+		"initial_stage_idx": 0,
 		"allow_disabled": false,
 		"loop": true,
 		"codes": "keysanity",
@@ -411,6 +828,12 @@
 				"codes": "op_keysanity_on",
 				"inherit_codes": false,
 				"name": "Keysanity Enabled"
+			},
+			{
+				"img": "/images/items/keyring.png",
+				"codes": "op_keysanity_on_rings",
+				"inherit_codes": false,
+				"name": "Keysanity Enabled w/ Keyrings"
 			}
 		]
 	},
@@ -434,6 +857,52 @@
 				"codes": "op_tokensanity_on",
 				"inherit_codes": false,
 				"name": "Tokensanity Enabled"
+			}
+		]
+	},
+	{
+		"name": "Enable Warp Rando",
+		"type": "progressive",
+		"initial_stage_idx": 0,
+		"allow_disabled": false,
+		"loop": true,
+		"codes": "warprando",
+		"stages": [
+			{
+				"img": "/images/items/warpgate.png",
+				"img_mods": "@disabled",
+				"codes": "op_warps_off",
+				"inherit_codes": false,
+				"name": "Warp Rando Disabled"
+			},
+			{
+				"img": "/images/items/warpgate.png",
+				"codes": "op_warps_on",
+				"inherit_codes": false,
+				"name": "Warp Rando Enabled"
+			}
+		]
+	},
+	{
+		"name": "Enable Snacksanity",
+		"type": "progressive",
+		"initial_stage_idx": 0,
+		"allow_disabled": false,
+		"loop": true,
+		"codes": "snacksanity",
+		"stages": [
+			{
+				"img": "/images/items/snack.png",
+				"img_mods": "@disabled",
+				"codes": "op_snacksanity_off",
+				"inherit_codes": false,
+				"name": "Snacksanity Disabled"
+			},
+			{
+				"img": "/images/items/snack.png",
+				"codes": "op_snacksanity_on",
+				"inherit_codes": false,
+				"name": "Snacksanity Enabled"
 			}
 		]
 	}

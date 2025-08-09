@@ -9,7 +9,7 @@
 				{
 					"type": "dock",
 					"dock": "left",
-					"v_alignment": "stretch",
+					"v_alignment": "top",
 					"margin": 0,
 					"content": [
 						{
@@ -25,6 +25,17 @@
 						},
 						{
 							"type": "group",
+							"header": "Warps",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "warps_grid"
+							}
+						},
+						{
+							"type": "group",
 							"header": "Tokens",
 							"dock": "top",
 							"content": {
@@ -36,6 +47,25 @@
 						},
 						{
 							"type": "group",
+							"header": "Snacks",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "snack_item_grid"
+							}
+						}
+					]
+				},
+				{
+					"type": "dock",
+					"dock": "left",
+					"v_alignment": "top",
+					"margin": 0,
+					"content": [
+						{
+							"type": "group",
 							"header": "Keys",
 							"dock": "top",
 							"content": {
@@ -43,6 +73,17 @@
 								"h_alignment": "center",
 								"v_alignment": "center",
 								"key": "keys_grid"
+							}
+						},
+						{
+							"type": "group",
+							"header": "Keyrings",
+							"dock": "top",
+							"content": {
+								"type": "layout",
+								"h_alignment": "center",
+								"v_alignment": "center",
+								"key": "keyrings_grid"
 							}
 						},
 						{
